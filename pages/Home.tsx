@@ -3,19 +3,19 @@ import React from 'react'
 
 export default function Home({navigation}) {
   return (
-    <View style={{flex:1,padding:20,justifyContent:'flex-end',backgroundColor:'#F7F8F9'}}>
+    <View style={styles.container}>
         <View style={{}}>
-      <Text style={{fontSize:28,color:'black',fontFamily:'Rubik-Regular',fontWeight:'normal',}}>Welcome to PopX</Text>
-      <Text style={{fontSize:18,fontWeight:'bold',fontFamily:'Rubik-Regular',lineHeight:26,letterSpacing:0,marginTop:10}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</Text>
+      <Text style={styles.heading}>Welcome to PopX</Text>
+      <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</Text>
       
       
-      <TouchableOpacity style={[styles.buttonstyle,{marginTop:29}]} onPress={()=>navigation.navigate('Signup')}> 
-      <Text style={{fontSize:16,color:'white',fontFamily:'Rubik-SemiBold'}}>Create Account</Text>
+      <TouchableOpacity style={[styles.buttonstyle,{marginTop:29,backgroundColor:'#6C25FF'}]} onPress={()=>navigation.navigate('Signup')}> 
+      <Text style={[styles.buttontextstyle,{color:'white'}]}>Create Account</Text>
 
       </TouchableOpacity>
       
       <TouchableOpacity style={[styles.buttonstyle,{backgroundColor:'#6C25FF4B',marginTop:10}]} onPress={()=>navigation.navigate('Login')}>
-      <Text style={{fontSize:16,color:'black',fontFamily:'Rubik-SemiBold'}}>Already Registered? Login</Text>
+      <Text style={styles.buttontextstyle}>Already Registered? Login</Text>
 
       </TouchableOpacity>
 
@@ -25,14 +25,25 @@ export default function Home({navigation}) {
 }
 
 const styles = StyleSheet.create({
-    buttonstyle:{
-        // width: 335,
+    container:{
+        flex:1,padding:20,justifyContent:'flex-end',backgroundColor:'#F7F8F9'
+    },
+    heading:{
+        fontSize:28,color:'black',fontFamily:'Rubik-Medium',fontWeight:'normal',
+    },
+    description:{
+        fontSize:18,fontWeight:'bold',fontFamily:'Rubik-Regular',lineHeight:26,letterSpacing:0,marginTop:10,color:'#1D2226',opacity:0.6
+    },
+    buttonstyle:{  
 height:46,
 borderRadius:6,
 justifyContent:'center',
 alignItems:'center',
-backgroundColor:'#6C25FF',
 
-
+    },
+    buttontextstyle:{
+        fontSize:16,
+        color:'black',
+        fontFamily:'Rubik-Medium'
     }
 })
