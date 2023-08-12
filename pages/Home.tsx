@@ -9,12 +9,12 @@ export default function Home({navigation}) {
       <Text style={{fontSize:18,fontWeight:'bold',fontFamily:'Rubik-Regular',lineHeight:26,letterSpacing:0,marginTop:10}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</Text>
       
       
-      <TouchableOpacity style={[styles.buttonstyle,{marginTop:29}]} onPress={()=>navigation.navigate('Login')}> 
+      <TouchableOpacity style={[styles.buttonstyle,{marginTop:29}]} onPress={()=>navigation.navigate('Signup')}> 
       <Text style={{fontSize:16,color:'white',fontFamily:'Rubik-SemiBold'}}>Create Account</Text>
 
       </TouchableOpacity>
       
-      <TouchableOpacity style={[styles.buttonstyle,{backgroundColor:'#6C25FF4B',marginTop:10}]} onPress={()=>navigation.navigate('Signup')}>
+      <TouchableOpacity style={[styles.buttonstyle,{backgroundColor:'#6C25FF4B',marginTop:10}]} onPress={()=>navigation.navigate('Login')}>
       <Text style={{fontSize:16,color:'black',fontFamily:'Rubik-SemiBold'}}>Already Registered? Login</Text>
 
       </TouchableOpacity>

@@ -23,7 +23,7 @@ export default function Login({navigation}) {
         <TextInput  placeholder='Enter password' style={{borderWidth:1,borderRadius:6,borderColor:'lightgray'}}></TextInput>
       </View>
 
-      <TouchableOpacity style={[styles.buttonstyle]} onPress={()=>navigation.navigate('Signup')}>
+      <TouchableOpacity style={[styles.buttonstyle]} onPress={()=>navigation.navigate('Profile')}>
       <Text style={{fontSize:16,color:'white',fontFamily:'Rubik-Medium'}}>Login</Text>
 
       </TouchableOpacity>

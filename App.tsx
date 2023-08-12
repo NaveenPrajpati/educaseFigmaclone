@@ -11,10 +11,14 @@ export default function App():JSX.Element {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Signup" component={Signup} options={{headerShown:false}}/>
-        <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
         <Stack.Screen name="Home" component={Home} options={{headerShown:false}}/>
-        <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="Signup" component={Signup} options={{headerShown:false}}/>
+        <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
+      <Stack.Screen name="Profile" component={Profile} options={{headerLeft:()=>(
+          <Text style={{fontSize:18,fontFamily:'Rubik-Regular',fontWeight:'normal',textTransform:'capitalize',color:'#1D2226',lineHeight:21}}>Account Settings</Text>
+        ),headerTitle:''}} />
+       
+    
       </Stack.Navigator>
     </NavigationContainer>
   )
