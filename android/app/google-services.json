@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "6051121994",
+    "project_id": "educasefigmaclone",
+    "storage_bucket": "educasefigmaclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6051121994:android:c38f6947ba43c6f3920fb3",
+        "android_client_info": {
+          "package_name": "com.educasefigmaclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6051121994-tnkd162oou5oag6ab6ot69038j1e45s9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPCaoUH45lKaOxktbiqm7DxxCWPImRTQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6051121994-tnkd162oou5oag6ab6ot69038j1e45s9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
